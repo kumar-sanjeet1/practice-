@@ -1,0 +1,36 @@
+var movies = [
+	{
+		title:"dhoom",
+		hasWatched: true,
+		rating: 5
+		
+	}, 
+	{
+		title: "commondo",
+		hasWatched:false,
+		rating: 4
+	}
+	];
+
+movies.forEach(function(movie) {
+	var result = "you have";
+	if(movie.hasWatched){
+		result += "watched";
+	}
+	else {
+		result += "not Watched";
+	
+	}
+	
+	result += "\"" + movie.title + "\"" +"-";
+	
+	result += movie.rating + " stars";
+	
+	console.log(result);
+});
+	
+	 
+	
+	
+
+
